@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* 메뉴 페이지  */
+@
+img_master {
+	height: 700pt;
+	width: 100%;
+}
+
+body {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#quickmenu {
+	position: fixed;
+	top: 50%;
+	right: 30px;
+	width: 79px;
+	margin: -230px 0 0;
+	z-index: 2;
+}
+
+/* 타이틀 CSS  */
+/* 타이틀 기본 양식  */
+.header {
+	width: 100%;
+	height: 110px;
+	position: fixed;
+	top: 0;
+	left: 0px;
+	z-index: 1000;
+	border-bottom: 1px solid #eeeeee;
+	background: white;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+.header_in {
+	position: fixed;
+}
+
+#menu_sub {
+	text-align: center;
+	margin: 0pt;
+	margin-left: 20pt;
+	height: 112px;
+	width: 600px;
+	display: inline-block;
+	float: left;
+}
+
+#store_logo>a>img {
+	position: absolute;
+	top: 6pt;
+	right: 43%;
+	height: 50px;
+	width: 50px;
+}
+
+#store_logo>a>span:hover {
+	background: url("../images/sub_menu_logo2_on.png");
+}
+
+#link_logo {
+	position: relative;
+	top: 30pt;
+	display: block;
+	width: 20pt;
+	height: 20pt;
+	float: left;
+}
+
+#store_logo>a>span {
+	font-size: 8pt;
+	height: 95px;
+	width: 109pt;
+	background: url("../images/sub_menu_logo2_off.png");
+	position: absolute;
+	margin-left: 5pt;
+	line-height: 15pt;
+	font-size: 14pt;
+	display: inline-block;
+	color: white;
+	right: 130pt;
+	font-weight: bold;
+	text-align: right;
+	z-index: -1;
+	line-height: 15pt;
+}
+
+#store_logo>a>span>p {
+	margin: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+header_in>#store_logo_text {
+	height: 100px;
+	width: 100px;
+	display: inline;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+#menu_sub>li {
+	display: inline-block;
+	width: 146px;
+	float: left;
+}
+
+#menu_sub>li>a {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+#menu_sub>#link_logo>a>img {
+	height: 20pt;
+	width: 20pt;
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+}
+/* 사용할 박스 크기  */
+.header>.header_in {
+	width: 1200px;
+	height: 100px;
+	box-sizing: border-box; /* 테두리 크기를 포함한 길이 */
+	position: relative;
+	margin: 0 auto;
+}
+
+@media ( max-width : 560px) {
+	.header>.header_in {
+		left: 0px;
+	}
+}
+
+/*로고 위치  */
+.header>.header_in #logo {
+	position: absolute; /* position: static 속성을 가지고 있지 않은 부모를 기준으로 움직입니다  */
+	top: 15px;
+	display: inline;
+	left: 40px;
+	margin: 0 auto;
+}
+
+.header>.header_in>#logo>img {
+	vertical-align: top;
+}
+
+.header>.header_in>.menu_list {
+	margine: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	margin-left: 113pt;
+	font-size: 15pt;
+}
+
+#menu_main {
+	position: relative;
+	float: left;
+	width: 800px;
+	height: 110px;
+	list-style: none;
+	background: none;
+	text-decoration: none;
+	color: white;
+	font-size: 14pt;
+	color: black;
+}
+
+#menu_main>li {
+	display: inline-block;
+	float: left;
+	width: 199px;
+}
+
+#menu_main>li>a {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 14pt;
+	color: black;
+}
+
+#new_event {
+	font-size: 10pt;
+	background-color: blue;
+}
+
+.header>.header_in>.menu_list>#menu_main {
+	margin: 0;
+	padding-inline-start: 0;
+}
+
+.header>.header_in>.menu_list>ul /*리스트 메뉴 가로로 정렬  */ {
+	position: absolute;
+	float: left;
+	display: inline-block;
+	list-style: none;
+	width: 110pt;
+	height: 100%;
+	line-height: 110px;
+	text-align: center;
+	font-size: 15pt;
+	font-style: "Myeongjo";
+	vertical-align: middle;
+}
+
+.menu_list>ul>#hd_banner {
+	left: 0;
+	visibility: hidden;
+	font-size: 20pt;
+}
+
+.menu_list>ul>#hd_banner>div>ul>li {
+	position: absolute;
+	display: inline-block;
+	left: 80pt;
+	visibility: hidden;
+	background-color: fuchsia;
+	font-size: 20pt;
+	ㄴ
+}
+
+@keyframes move {from { height:0px;
+	
+}
+
+to {
+	height: 300px;
+}
+
+}
+@keyframes move1 {
+	from
+ {
+ opacity :0;
+	
+}
+50%
+{
+opacity:0;
+}
+to {
+	opactiy: 1;
+}
+
+}
+.header>div>#hd_name {
+	visibility: hidden;
+}
+
+.header:hover #hd_name {
+	position: fixed;
+	top: 108px;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	animation-name: move;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	opacity: 0.8;
+	visibility: visible;
+	display: block;
+}
+
+.header #hd_name>a {
+	
+}
+
+#menu_sub {
+	position: fixed;
+	margin: 0;
+	padding-inline-start: 0px;
+}
+
+.header:hover #hd_name>a>img {
+	animation-name: move1;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	opacity: 1;
+}
+
+#imgs {
+	float: right;
+	position: fixed;
+
+	top: 160px;
+	opacity: 1.0;
+	display: inline-block;
+	width : 300px;
+	opacity: 1;
+	visibility: hidden;	
+	display: inline-block;
+}
+
+
+
+.header:hover #imgs>a>img {
+	visibility: visible;
+	animation-name: move1;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+}
+
+#hd_submenu {
+	padding-inline-start: 0px;
+	visibility: hidden;
+	position: fixed;
+	top: 100pt;
+	font-size: 13pt;
+	color: navy;
+	height: 200px;
+	border: 1px solid;
+	margin: 0 auto;
+	text-align: center;
+	opacity: 0.5;
+	width: 600pt;
+	float: left;
+	text-decoration: none;
+}
+
+#hd_submenu>table {
+	width: 800px;
+	height: 100pt;
+}
+
+#tbl>td {
+	width: 119px;
+	text-align: center;
+}
+
+#tbl>td>a {
+	text-decoration: none;
+	font-size: 14pt;
+	font-stretch: condensed;
+	color: white;
+	font-weight: bold;
+}
+
+.header:hover #hd_submenu {
+	animation-name: move1;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	o냐pacity: 1;
+	visibility: visible;
+	display: block;
+}
+
+/* slide 부분*/
+.carousel-indicators {
+	bottom: 60px;
+}
+
+#side_menu {
+	left: 25%;
+	right: 25%;
+	position: relative;
+	border: 4pt dotted;
+	height: 60px;
+	width: 50%;
+	top: -41pt;
+}
+
+#side_menubar {
+	vertical-align: middle;
+	height: 100%;
+}
+
+#side_menubar>ul {
+	height: 100%;
+}
+
+#side_menubar>ul>li {
+	width: 24%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#head2 {
+	height: 264px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	background-color: navy;
+	background: url("../res_img/treegrain.jpg");
+
+}
+
+
+.drink #menu_tbl {
+	position: absolute;
+	top: 110px;
+	background-color: olive;
+	width: 30%;
+	height: auto;
+}
+
+.drink {
+		background-color: azure;
+
+	width: 100%;
+	height: 100%;
+}
+
